@@ -2,14 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <title>My First Weather App</title>
     </head>
     <body>
         <h1>My First Weather App</h1>
-        <form>
-            <p>this will be where users input the city</p>
-            <h1>Weather In your Location</h1>
+        <form class="userFormInput">
+            <label for="location" id="formUserLocation">Location</label><br>
+            <input type="text" placeholder="Search By Location" id="formUserTextInput" name="Location"><br>
+            <button type="submit" id="formUserButton">Search</button>
         </form>
+        <h2>Current Weather</h2>
+        <div>
+            <p id="currentResultCity">City:</p>
+            <p id="currentTemperatureResultCity">Temperature:</p>
+            <p id="currentWeatherResult">Weather:</p>
+        </div>
     </body>
 
+    <footer>©2023 - Created by - Ollie Lloyd</footer>
 </html>
