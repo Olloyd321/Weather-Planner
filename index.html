@@ -8,19 +8,23 @@
     </head>
     <body>
         <h1>My First Weather App</h1>
-        <form class="userFormInput">
+        <form class="userFormInput" id="form">
             <label for="location" id="formUserLocation">Location</label><br>
             <input type="text" placeholder="Search By Location" id="formUserTextInput" name="Location"><br>
-            <button type="submit" id="formUserButton">Search</button>
+            <button type="submit" id="search">Search</button>
         </form>
-        <h2>Current Weather</h2>
+        <h2>Current Weather in </h2>
+        <p >City: <span id="currentResultCity"></span></p>
         <div class="displayCurrentWeatherSection">
-            <p >City: <span id="currentResultCity"></span></p>
+            
             <p >Temperature: <span id="currentTemperatureResult"></span></p>
             <p >Weather: <span id="currentWeatherResult"></span></p>
             <p >Humidity: <span id="currentHumidityResult"></span></p>
             <p >Wind Speed: <span id="currentWindResult"></span></p>
         </div>
+    <main>
+
+    </main>
     <script src="./assets/js/script.js"></script> 
     </body>
 
