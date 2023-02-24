@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+* {  
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(150deg, black);
+   
+}
+
+#mainBody{
+    background-image: url(/assets/images/clouds.jpg);
+    background: linear-gradient(150deg, black);
+    background-size: cover;
+    border: 25px;
+    border-radius: 35px;
+    justify-content: center;
+}
+
+#weatherResultSection {
+    background: linear-gradient(150deg, black);
+    background-size: cover;
+    border: 25px;
+    border-radius: 35px;
+    
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 15px;
+    color: aliceblue;
+    background-image: url(/assets/images/rain-clouds.jpg);
+    background-size: cover;
+}
+
+#currentWeatherHeader{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    
+}
+
+#weatherResultSection{
+    font-weight: 800;
+    color: rgba(115, 255, 255, 0.864);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(182, 182, 255, 0.938), 0 0 0.2em rgb(204, 204, 241);
+
+}
+#currentResultCity{
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    font-weight: 625;
+}
+
+#cityListedBelow{
+    font-family: 'Montserrat', sans-serif;
+    font-size:medium;
+    font-weight: 850;
+}

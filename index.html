@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <title>My First Weather App</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    </head>
-    <body>
-        <h1>My First Weather App</h1>
-        <form class="userFormInput" id="form">
-            <label for="location" id="formUserLocation">Location</label><br>
-            <input type="text" placeholder="Search By Location" id="formUserTextInput" name="Location"><br>
-            <button type="submit" id="search">Search</button>
-        </form>
-        <h2>Current Weather in </h2>
-        <p >City: <span id="currentResultCity"></span></p>
-        <div class="displayCurrentWeatherSection">
-            
-            <p >Temperature: <span id="currentTemperatureResult"></span></p>
-            <p >Weather: <span id="currentWeatherResult"></span></p>
-            <p >Humidity: <span id="currentHumidityResult"></span></p>
-            <p >Wind Speed: <span id="currentWindResult"></span></p>
+<html class="block" id="root">
+    <div class="column is-mobile">
+        <head class="columns is-full">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+            <title>My First Weather App</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+        </head>
+        <div class="content has-text-centered">
+            <div class="content">    
+                <body class="columns is-mobile" id="mainBody">
+                    <h1 class="column">My First Weather App</h1>
+                    <form class="userFormInput" id="form">
+                    <div class="level-item">        
+                        <div class="column"> 
+                                <label for="location" id="formUserLocation">Location</label><br>
+                                <input class="input is-hovered" type="text" placeholder="Search By Location" id="formUserTextInput" name="Location"><br>
+                                <button type="submit" id="search">Search</button>
+                        </div>
+                    </div>    
+                    </form class="column">
+                    <h2 class="column" id="currentWeatherHeader">Current Weather</h2>
+                    <p class="currentCity">
+                        <p id="cityListedBelow">City:</p>
+                        <span id="currentResultCity"></span>
+                    <div class="column" id="weatherResultSection">    
+                        <div class="content" >
+                            <div class="displayCurrentWeatherSection">
+                            
+                                <p class="column">Temperature: <span id="currentTemperatureResult"></span></p>
+                                <p class="column">Weather: <span id="currentWeatherResult"></span></p>
+                                <p class="column">Humidity: <span id="currentHumidityResult"></span></p>
+                                <p class="column">Wind Speed: <span id="currentWindResult"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                <script src="./assets/js/script.js"></script> 
+                </body>
+            </div>
         </div>
-    <main>
-
-    </main>
-    <script src="./assets/js/script.js"></script> 
-    </body>
-
-    <footer>©2023 - Created by - Ollie Lloyd</footer>
+        <footer class="footer" id="footer">
+            <div class="content has-text-centered">
+            ©2023 - Created by - Ollie Lloyd
+            </div>
+        </footer>
+    </div>
 </html>

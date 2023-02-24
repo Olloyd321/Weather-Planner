@@ -1,10 +1,18 @@
-// const APIURL = 'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={74190a20c1ddbdc4f115b7fc58fd24ac}'
-// const GEOAPIURL = 'http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={74190a20c1ddbdc4f115b7fc58fd24ac}'
 const apiKey = "74190a20c1ddbdc4f115b7fc58fd24ac";
 const form = document.getElementById('form');
 const main = document.getElementById('main');
 const search = document.getElementById('search');
+const noCitySelected = document.getElementById('currentResultCity')
 
+// This function is for hiding "undefined" before user searches but still working on
+// function hideNoCitySelected () {
+//     if (noCitySelected = "undefined"){
+//         noCitySelected.style.display = "none";
+//     }
+    
+// }
+
+// API call to get weather by location
 function getWeatherByLocation(location){
     const urlApiCall = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=imperial`;
     const APIURLForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}`;
@@ -30,6 +38,7 @@ function getWeatherByLocation(location){
     // const responseData = response.json();
     // console.log(responseData);
 }
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
