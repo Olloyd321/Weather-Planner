@@ -11,7 +11,7 @@ body {
 }
 
 #mainBody{
-    background-image: url(/assets/images/clouds.jpg);
+    background-image: url(/images/clouds.jpg);
     background: linear-gradient(150deg, black);
     background-size: cover;
     border: 25px;
@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     min-height: 15px;
     color: aliceblue;
-    background-image: url(/assets/images/rain-clouds.jpg);
+    background-image: url(/images/rain-clouds.jpg);
     background-size: cover;
 }
 
