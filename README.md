@@ -7,6 +7,8 @@ The purpose of this challenge is to demonstrate my understanding of third party 
 ## Challenges 
 The most challenging aspect of this project was the API call and then displaying that info. This project will not be my only submission as there is still more to do but this, with my current ability, is what I was able to put together from scratch, I intend on further refining the site as my understanding of coding grows. 
 
+While deploying the application I had some issues with git hub pages not pushing my images folder so the page doesn't look like what I made, I tried to trouble shoot and managed to get the images to link properly.
+
 ### Acceptance Criteria
 
 ```
